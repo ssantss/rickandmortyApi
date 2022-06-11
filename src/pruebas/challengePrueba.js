@@ -1,4 +1,4 @@
-const fetchData = require('../util/fetchData');
+const fetchData = require('../utils/fetchData');
 const API = 'https://rickandmortyapi.com/api/character/';
 
 const anotherFuncion = async (url_api) => {
@@ -12,7 +12,7 @@ const anotherFuncion = async (url_api) => {
         //console.log(data.info.next)
         const data2 = await fetchData(data.info.next) // se va a la siguiente pagina */
 
-        for (let index = 2; index <= data.info.pages; index++) {
+        for (let index = 2; index <= /* data.info.pages */ 2 ; index++) { // LE COMENTE EN data.info.pages para no hacer tantos llamados
             console.log(nextpage)
             const data2 = await fetchData(nextpage)
             results = [...results,...data2.results ]
