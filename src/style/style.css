@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ html {
+    font-size: 62.2%;
+}
+@font-face {
+    font-family: 'rick';
+    src: url("../resources/get_schwifty.ttf");
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: auto; 
+    height: 270px;
+    background-color: #B1D75C;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'rick', sans-serif;
+}
+ .titulo{
+    font-size: 80px;
+    color: #00B5CD;
+    cursor: alias;
+    padding: 10px;
+    text-align: center;
+ }
+
+ .API {
+    display: flex;
+    font-size: 30px;
+    color: #E198EE;
+    cursor: alias;
+    padding: 10px;
+    
+    
+    
+ }
+
+.link{
+    text-decoration: none;
+ }
+.link:visited{
+    color: #E198EE;
+}
+
+.Logo img{
+    width: auto;
+    height: 250px;
+}
