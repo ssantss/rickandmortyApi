@@ -12,25 +12,24 @@
 </head>
 <body>
     <header class="header">
-        <div class="Logo"><img src="./src/resources/toppng.com-rick-and-morty-png-rick-and-morty-w-1848x3238.png" alt="Logo"></div>
+        <div class="Logo"><img src="./src/resources/imgtittle.png" alt="Logo"></div>
         <div class="titulo"> <a href="/index.html"> Rick and Morty</a> <a target="_blank" href="https://rickandmortyapi.com/"> API test</a></div>
-        <div class="Logo"><img src="./src/resources/toppng.com-rick-and-morty-png-rick-and-morty-w-1848x3238.png" alt="Logo"></div>
+        <div class="Logo"><img src="./src/resources/imgtittle.png"alt="Logo"></div>
     </header>
 
-    <main class="container">
-        <section id="cards-content" class="container">
+    <main class="container"> <!-- //container Donde va ir el section de todas las tarjets -->
+        <section id="cards-content" class="container"> <!-- // Section con el id cards-content, Donde el card cardGenerator va a construir cada elemento de la API  -->
             
         </section>        
         <div class="tarjet">
             <div class="tarjet_button">
-                <button class="button" onclick="play()">CARGAR MAS ELEMENTOS</button>
+                <button class="button" onclick="play()">CARGAR MAS ELEMENTOS</button> <!-- // boton con metodo onclick, para hacer llamado de los siguientes 20 elementos de la api -->
             </div>
         </div>
-        <script src="./src/utils/fetchData.js"></script>
-        <script src="./src/utils/cardGenerator.js"></script>
-        <script src="./src/utils/index.js"></script>
-
-
+       <!--  // se enlazan todos los archivos .js que contienen la logica de la aplicacion -->
+        <script src="./src/utils/fetchData.js"></script>  <!-- // fetchData es el que hace el llamado a la API -->
+        <script src="./src/utils/cardGenerator.js"></script> <!-- // Genera las card de cada item del objeto que le entregamos -->
+        <script src="./src/utils/index.js"></script> <!-- // Tiene toda la logica para consultar la api y asignar cada valor a un objeto para poder acceder a el despues de la asignacion -->
     </main>
 </body>
 </html>
