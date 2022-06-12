@@ -103,3 +103,36 @@
     margin: 14px;
     font-size: 1.4rem;
 }
+
+.button {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    padding: 2px 12px;
+    background-color: #1ef30d;
+    box-shadow: 3px 3px 0px #acf5da;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #1ef30d;
+    box-shadow: 0px 15px 20px acf5da;
+    color: black;
+    /* transform: translateY(-7px); */
+   }
+
+   .button:active {
+    transform: translateY(-7px);
+   }
+
+.tarjet_button{
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    
+    font-family: 'Nunito', sans-serif;
+    border-radius: 7px;
+}
