@@ -6,9 +6,11 @@ const cardGenerator = object => {
     <img src="${object.image}" alt="imagen de ${object.name}">
     <h2 class="Title_card">${object.name}</h2>
     <div class="description-tarjet">
-        <p><b>Especies:</b>${object.species}</p>
-        <p><b>Gender:</b>${object.gender}</p>
-        <p><b>Origin:</b>${object.origin.name}</p>
+        <p><b>Especies: </b>${object.species}</p>
+        <p><b>Gender: </b>${object.gender}</p>
+        <p><b>Origin: </b>${object.origin.name}</p>
+        <p><b>Location: </b>${object.location.name}</p>
+        <p><b>Status: </b>${object.status}</p>
     </div>
     `;
   

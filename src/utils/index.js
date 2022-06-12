@@ -7,7 +7,7 @@ const anotherFuncion = async (url_api) => {
         let results = data.results;
         let nextpage = data.info.next;
         
-        for (let index = 2; index <= data.info.pages ; index++) { // LE COMENTE EN data.info.pages para no hacer tantos llamados
+        for (let index = 2; index <= /* data.info.pages */ 5 ; index++) { // LE COMENTE EN data.info.pages para no hacer tantos llamados
             console.log(nextpage)
             const data2 = await fetchData(nextpage)
             results = [...results,...data2.results ]
