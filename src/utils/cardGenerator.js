@@ -10,7 +10,7 @@ const cardGenerator = object => {
         <p><b>Gender: </b>${object.gender}</p>
         <p><b>Origin: </b>${object.origin.name}</p>
         <p><b>Location: </b>${object.location.name}</p>
-        <p><b>Status: </b>${object.status}</p>
+        <p class="${object.status}"><b>Status: </b>${object.status}</p>
     </div>
     `;
   

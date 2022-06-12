@@ -35,9 +35,6 @@
     color: #E198EE;
     cursor: alias;
     padding: 10px;
-    
-    
-    
  }
 
 .link{
@@ -61,7 +58,6 @@
     margin: 0;
     align-items: flex-start;
     background-color: black;
-
 }
 
 
@@ -139,3 +135,28 @@
     border-radius: 7px;
 }
 
+.Alive{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    padding: 2px 12px;
+    background-color: #1ef30d;
+    box-shadow: 3px 3px 0px #acf5da;
+    border: 1px solid #000000;
+}
+.Dead{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    padding: 2px 12px;
+    background-color: red;
+    box-shadow: 3px 3px 0px #acf5da;
+    border: 1px solid #000000;
+}
+.unknown{
+    
+    margin-top: 10px;
+    font-size: 1.6rem;
+    padding: 2px 12px;
+    background-color: #E198EE;
+    box-shadow: 3px 3px 0px #acf5da;
+    border: 1px solid #000000;
+}
