@@ -97,6 +97,8 @@
     box-shadow: 3px 3px 0px #acf5da;
     border: 1px solid #000000;
 }
+
+
 .description-tarjet {
     width: 100%;
     padding: 0 20px;
@@ -114,13 +116,37 @@
     box-shadow: 3px 3px 0px #acf5da;
     border: 1px solid #000000;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 .button:hover {
     background-color: #1ef30d;
     box-shadow: 0px 15px 20px acf5da;
     color: black;
     /* transform: translateY(-7px); */
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
    }
+
+@keyframes swing {
+    15% {
+    transform: translateX(5px);
+    }
+    30% {
+    transform: translateX(-5px);
+    }
+    50% {
+    transform: translateX(3px);
+    }
+    65% {
+    transform: translateX(-3px);
+    }
+    80% {
+    transform: translateX(2px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
 
 .button:active {
     transform: translateY(-7px);
